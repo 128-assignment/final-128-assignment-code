@@ -90,23 +90,26 @@ async function fetchInternships() {
       const card = document.createElement('div');
       card.className = 'internship-card';
 
-      card.innerHTML = `
+    card.innerHTML = `
+      <div class="top-row">
         <div class="internship-info">
           <h3>${internship.title}</h3>
           <p><strong>Company:</strong> ${internship.company_name}</p>
           <p><strong>Type:</strong> ${internship.department || 'N/A'}</p>
           <p><strong>Deadline:</strong> ${internship.end_date ? new Date(internship.end_date).toLocaleDateString() : 'N/A'}</p>
-          <div class="details" style="display:none;">
-            <p><strong>Location:</strong> ${internship.location || 'N/A'}</p>
-            <p><strong>Stipend:</strong> ${internship.stipend || 'N/A'}</p>
-            <p><strong>Skills Required:</strong> ${internship.requirements || 'N/A'}</p>
-            <p><strong>Description:</strong> ${internship.description || 'N/A'}</p>
-          </div>
         </div>
-        <div class="card-actions">
-          <button class="button toggle-details">View Details</button>
+        <div class="details hidden">
+          <p><strong>Location:</strong> ${internship.location || 'N/A'}</p>
+          <p><strong>Stipend:</strong> ${internship.stipend || 'N/A'}</p>
+          <p><strong>Skills Required:</strong> ${internship.requirements || 'N/A'}</p>
+          <p><strong>Description:</strong> ${internship.description || 'N/A'}</p>
         </div>
-      `;
+      </div>
+      <div class="card-actions">
+        <button class="button toggle-details">View Details</button>
+      </div>
+    `;
+
 
       const applyBtn = document.createElement('button');
       applyBtn.textContent = 'Apply';
@@ -400,11 +403,6 @@ window.onload = () => {
   // My-Application page
   if (document.getElementById('applicationTable')) {
     loadApplications();
-  }
-
-    //Profile page
-  if (document.getElementById('edit-btn')) {
-    attachProfileListeners();
   }
 
 };
