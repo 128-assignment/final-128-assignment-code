@@ -1,0 +1,67 @@
+body {
+    height: 100%;
+    background-image: url(website_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    float: left;
+}
+
+.dashboardimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block;
+}
+
+div {
+    background-image: linear-gradient(to left,rebeccapurple, #1B0D31,  #1B0D31,  #1B0D31);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+/* Dashboard Cards */
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  font-weight: 600;
+  color: rebeccapurple;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  height:250px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(21,101,192,0.3);
+    transform: translateY(-6px);
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.card span {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

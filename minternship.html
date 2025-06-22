@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Internship Programs</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="company.css">
+  
+</head>
+<body>
+
+  <div>
+    <img src="logo2.png" class="logo">
+    <header>Manage Internship Programs</header>
+  </div>
+
+  <nav>
+    <a href="dashboardcomp.html">Home</a>
+    <a href="createinternships.html">Create Internship</a>
+    <a href="minternship.html">Manage Internship</a>
+    <a href="vmapplication.html">Applications</a>
+    <a href="compprofile.html">Account</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <div class="container mipContainer">
+    <h2>Posted Internships</h2>
+    <table id="internshipTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Program Title</th>
+          <th>Department</th>
+          <th>Start Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Details or Edit Form will appear here -->
+  <div id="internshipDetails" style="display:none; padding: 10px; border: 1px solid #ccc; margin: 20px;"></div>
+
+<script src="company.js"></script>
+
+</body>
+</html>

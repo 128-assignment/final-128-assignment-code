@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Create Internship Program</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="company.css">
+
+</head>
+<body>
+
+    <div>
+      <img src="logo2.png" class="logo">
+      <header>
+        Create Internship Program
+      </header>
+    </div>
+    <nav>
+      <a href="dashboardcomp.html">Home</a>
+      <a href="createinternships.html">Create Internship</a>
+      <a href="minternship.html">Manage Internship</a>
+      <a href="vmapplication.html">Applications</a>
+      <a href="compprofile.html">Account</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  
+
+  <div class="container">
+    <h2>Internship Details</h2>
+    <form action="/submit-internship" method="POST">
+      <label >Internship Title</label>
+      <input type="text" id="title" name="title" placeholder="e.g., Software Developer Intern" required>
+
+      <label>Department</label>
+      <input type="text" id="department" name="department" placeholder="e.g., Engineering" required>
+
+      <label >Start Date</label>
+      <input type="date" id="start" name="start" required>
+
+      <label >End Date</label>
+      <input type="date" id="end" name="end" required>
+
+      <label >Location</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Remote or New York Office">
+
+      <label>Stipend</label>
+      <input type="text" id="stipend" name="stipend" placeholder="3dhs/hr">
+
+
+      <label >Program Description</label>
+      <textarea id="description" name="description" rows="6" placeholder="Describe the role, responsibilities, and expectations..." required></textarea>
+
+      <label >Requirements</label>
+      <textarea id="requirements" name="requirements" rows="4" placeholder="List skills, education, etc."></textarea>
+
+      <button onclick="showmessage()" >Create Internship</button>
+
+
+    </form>
+  </div>
+<script src="company.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+html, body {
+    background-image: url(website_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    text-align: center;
+}
+
+#main_div {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+
+.login_div {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login_div button {
+    width: auto;
+    height: 30px;
+}
+
+.acc_details input {
+    width: 250px;
+}
+
+.main_table {
+    border-spacing: 80px 30px;
+}
+
+.user_type {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+}
+
+a:link {
+    color: white;
+}
+
+.back {
+    float: left;
+}
+
+#website_description {
+    width: 400px;
+}
+
+#login_options {
+    width: 210px;
+    text-align: center;
+}

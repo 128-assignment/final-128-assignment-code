@@ -1,0 +1,178 @@
+
+    body {
+        flex-direction: column;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+
+    header {
+      color: white;
+      position: relative;
+      float: left;
+      font-size: 40px;
+      font-weight: 600;
+      padding: 1.5rem 2rem;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      user-select: none;
+      font-weight: 600;
+      color: rebeccapurple;
+      border: 2px solid white;
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(21,101,192,0.3);
+      transform: translateY(-6px);
+      background-color: rebeccapurple;
+      color: white;
+    }
+
+    /* Optional: icons or emojis */
+    .card span {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      padding: 10px 20px;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #cce4ff;
+    }
+
+
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
+      color: rebeccapurple;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .mipContainer {
+        max-width: 1100px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: rebeccapurple;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-align: left;
+      color: rebeccapurple
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .create_or_save_button {
+      padding: 0.8rem 1.5rem;
+      border: 2px solid white;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      background-color: rebeccapurple;
+      color: white;
+    }
+
+    .create_or_save_button:hover {
+      background-color: white;
+      border: 2px solid rebeccapurple;
+      color: rebeccapurple;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #e3f2fd;
+    }
+
+    .actions button {
+      display: inline-block;
+      gap: 5px; 
+      flex-wrap: wrap;
+      padding: 0.4rem 0.8rem;
+      margin-right: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .edit-btn { background-color: rebeccapurple; color: white; }
+    .delete-btn { background-color: purple; color: white; }
+    .deactivate-btn { background-color: navy; color: white; }
+    .approve-btn { background-color: turquoise; color: white; }
+    .view-btn { background-color: skyblue; color: white; }
+
+    button:disabled {
+      background-color: #ccc;    
+      color: #666;               
+      cursor: not-allowed;       
+      opacity: 0.7;              
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }

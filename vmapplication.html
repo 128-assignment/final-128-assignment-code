@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application Management</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="company.css">
+</head>
+<body>
+  <div>
+    <img src="logo2.png" class="logo">
+    <header>Company Application Management</header>
+  </div>
+
+  <nav>
+    <a href="dashboardcomp.html">Home</a>
+    <a href="createinternships.html">Create Internship</a>
+    <a href="minternship.html">Manage Internship</a>
+    <a href="vmapplication.html">Applications</a>
+    <a href="compprofile.html">Account</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <div id="applications_display" class="container mipContainer">
+    <h2>Submitted Applications</h2>
+    <table id="application_table">
+      <thead>
+        <tr>
+          <th>Applicant Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Bio</th>
+          <th>Resume</th>
+          <th>Internship Program</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="application_table_body"></tbody>
+    </table>
+  </div>
+<script src="company.js"></script>
+</body>
+</html>

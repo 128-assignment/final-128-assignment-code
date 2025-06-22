@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="user.css">
+</head>
+<body>
+  <div>
+    <img src="logo2.png" class="logo">
+    <header>Internship Management Portal</header>
+  </div>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="my-application.html">My Applications</a>
+    <a href="profile.html">My Profile</a>
+    <a href="login.html">Logout</a>
+  </nav>
+  <hr>
+
+  <div class="profile-container">
+    <h1>User Profile</h1>
+
+    <div class="internship-info" id="profile-info">
+      <p><strong>Name:</strong> <span id="display-name">Loading...</span></p>
+      <p><strong>Email:</strong> <span id="display-email">Loading...</span></p>
+    </div>
+
+    <button id="edit-btn">Edit Profile</button>
+
+    <form id="edit-form" style="display:none;">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"
+             required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$"
+             title="Please enter a valid email address" />
+
+      <label for="password">New Password (leave blank if no change)</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" />
+
+      <button type="submit">Save</button>
+      <button type="button" id="cancel-btn">Cancel</button>
+    </form>
+  </div>
+  <script src="user.js"></script>
+</body>
+</html>

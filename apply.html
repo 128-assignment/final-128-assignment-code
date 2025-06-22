@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply for Internship</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="user.css">
+</head>
+<body>
+  <div>
+    <img src="logo2.png" class="logo">
+    <header>Internship Management Portal</header>
+  </div>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="my-application.html">My Applications</a>
+    <a href="profile.html">My Profile</a>
+    <a href="login.html">Logout</a>
+  </nav>
+  <hr>
+
+  <section>
+    <h2>Apply for Internship</h2>
+    <div class="container">
+      <form id="applicationForm">
+        <input type="hidden" name="internship_id" id="internship_id">
+        <label>Full Name: <input type="text" name="fullname" id="fullname" required readonly></label><br>
+        <label>Email: <input type="email" name="email" id="email" required readonly></label><br>
+        <label>Phone: 
+          <input type="text" name="phone" id="phone"  
+                 pattern="^\+971 ?[0-9]{9}$"
+                 maxlength="14"
+                 title="Phone number must be in the format +971 912345678"
+                 placeholder="+971 912345678">
+        </label><br>
+        <label>Bio: <textarea name="bio" id="bio"></textarea></label><br>
+        <label>Resume Link (Google Drive / Dropbox): 
+          <input type="url" name="resume_link" id="resume_link" required 
+                 placeholder="https://drive.google.com/..." 
+                 pattern="https?://.+" 
+                 title="Please enter a valid URL starting with http or https" />
+        </label><br>
+        <button type="button" onclick="window.location.href='internships.html'">Back</button>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+  <script src="user.js"></script>
+
+</body>
+</html>
+
+</html>

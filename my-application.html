@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Applications</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="user.css">
+
+  <style>
+    .details-row {
+      display: none;
+      background-color: #f9f9f9;
+    }
+    .details-cell {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src="logo2.png" class="logo">
+    <header>
+      Internship Management Portal
+    </header>
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="my-application.html">My Applications</a>
+    <a href="profile.html">My Profile</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+  <hr>
+
+  <div class="container">
+    <h1>My Applications</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Program Title</th>
+          <th>Company</th>
+          <th>Department</th>
+          <th>Start Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="applicationTable">
+        <!-- Filled dynamically -->
+      </tbody>
+    </table>
+  </div>
+  <script src="user.js"></script>
+</body>
+</html>

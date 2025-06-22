@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Available Internships</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="user.css">
+  
+</head>
+<body>
+ <body>
+  <div>
+  <img src="logo2.png" class="logo">
+  <header>
+    Internship Management Portal
+  </header>
+  </div>
+  
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="my-application.html">My Applications</a>
+    <a href="profile.html">My Profile</a>
+    <a href="login.html">Logout</a>
+  </nav>
+
+  <section>
+    <input id="keyword" type="text" placeholder="Search by keyword...">
+    <select id="domain">
+      <option value="">Filter by Domain</option>
+      <option value="IT">IT</option>
+      <option value="Marketing">Marketing</option>
+      <!-- Add other domains as needed -->
+    </select>
+    <select id="location">
+      <option value="">Filter by Location</option>
+      <option value="Dubai">Dubai</option>
+      <option value="Abu Dhabi">Abu Dhabi</option>
+      <!-- Add other locations as needed -->
+    </select>
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <section>
+    <h2>Available Positions</h2>
+    <div id="internshipsContainer">
+      <!-- Internship cards will be dynamically inserted here -->
+    </div>
+  </section>
+<script src="user.js"></script>
+</body>
+</html>
