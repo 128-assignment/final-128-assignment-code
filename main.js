@@ -43,8 +43,8 @@ http.createServer((req, res) => {
             con.connect(err => {
                 if (err) throw err;
 
-                const checkUser = "SELECT * FROM users WHERE username = ? AND password = ?";
-                con.query(checkUser, [username, password], (err, userResult) => {
+                const checkUser = "SELECT * FROM users WHERE (username = ? OR email = ?) AND password = ?";
+                con.query(checkUser, [username, username, password], (err, userResult) => {
                     if (err) throw err;
 
                     console.log("User query result:", userResult);
@@ -60,8 +60,8 @@ http.createServer((req, res) => {
                         </body></html>`);
                         return res.end();
                     } else {
-                        const checkCompany = "SELECT * FROM companies WHERE company_name = ? AND password = ?";
-                        con.query(checkCompany, [username, password], (err, companyResult) => {
+                        const checkCompany = "SELECT * FROM companies WHERE (company_name = ? OR email = ?) AND password = ?";
+                        con.query(checkCompany, [username,username, password], (err, companyResult) => {
                             if (err) throw err;
 
                             console.log("Company query result:", companyResult);
