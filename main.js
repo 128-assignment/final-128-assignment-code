@@ -72,7 +72,7 @@ http.createServer((req, res) => {
                                 res.write(`<html><body>
                                     <script>
                                         alert('Login successful!');
-                                        window.location.href = "/home.html";
+                                        window.location.href = "/dashboardcomp.html";
                                     </script>
                                 </body></html>`);
                                 return res.end();
