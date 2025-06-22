@@ -50,11 +50,16 @@ async function submitApplication(e) {
       body: JSON.stringify(formData),
       credentials: 'include'
     });
-    const text = await res.text();
-    eval(text);  // Be cautious with eval; ensure server response is safe
-  } catch {
-    alert("Failed to submit application.");
+  const result = await res.json();
+  if (result.success) {
+    alert("Application submitted successfully!");
+    window.location.href = '/my-application.html'; // or any relevant page
+  } else {
+    alert("Error: " + (result.error || "Unknown error occurred."));
   }
+} catch (err) {
+  alert("Failed to submit application: " + err.message);
+}
 }
 
 // ===== Internships Page Functions =====
