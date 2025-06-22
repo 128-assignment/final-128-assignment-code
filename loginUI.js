@@ -123,7 +123,7 @@ function validateForm(type) {
         username: /^[a-zA-Z0-9_]{3,20}$/,
         companyName: /^[a-zA-Z0-9\s&]{2,50}$/,
         email: /^[a-zA-Z0-9._\-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/i,
-        phone: /^[0-9]{9}$/,
+        phone: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/,
         password: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/
     };
 
@@ -150,7 +150,7 @@ function validateForm(type) {
             return false;
         }
         if (!patterns.phone.test(values.phone)) {
-            errorEl.textContent = "Phone number must be 9 digits.";
+            errorEl.textContent = "Phone number must follow the format +971 XXXXXXXXX.";
             return false;
         }
     }
