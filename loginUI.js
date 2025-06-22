@@ -123,7 +123,7 @@ function validateForm(type) {
         username: /^[a-zA-Z0-9_]{3,20}$/,
         companyName: /^[a-zA-Z0-9\s&]{2,50}$/,
         email: /^[a-zA-Z0-9._\-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/i,
-        phone: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/,
+        phone: phone: /^\+971 \d{9}$/,
         password: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/
     };
 
