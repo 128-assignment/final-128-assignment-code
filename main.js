@@ -21,7 +21,7 @@ function connectToDB() {
   return mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "f9thRaM.",
+    password: "admin",
     database: "loginSystem"
   });
 }
