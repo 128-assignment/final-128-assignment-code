@@ -24,6 +24,8 @@
   </nav>
 
   <section>
+    <div class="search">
+    <h1>Available Positions</h1>
     <input id="keyword" type="text" placeholder="Search by keyword...">
     <select id="domain">
       <option value="">Filter by Domain</option>
@@ -48,14 +50,13 @@
       <option value="Fujairah">Fujairah</option>
     </select>
     <button id="searchBtn">Search</button>
-  </section>
-
-  <section>
-    <h2>Available Positions</h2>
-    <div id="internshipsContainer">
+    </div><br>
+    
+    <div class="internship-card" id="internshipsContainer">
       <!-- Internship cards will be dynamically inserted here -->
     </div>
   </section>
+
 <script src="user.js"></script>
 </body>
 </html>
