@@ -74,7 +74,7 @@ db.connect((err) => {
             });
 
             const createApplicationsTable = `
-                CREATE TABLE applications (
+                CREATE TABLE IF NOT EXISTS applications (
 				  id INT AUTO_INCREMENT PRIMARY KEY,
 				  user_id INT,
 				  internship_id INT,
