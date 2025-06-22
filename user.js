@@ -405,5 +405,10 @@ window.onload = () => {
     loadApplications();
   }
 
+    //Profile page
+  if (document.getElementById('edit-btn')) {
+    attachProfileListeners();
+  }
+
 };
 
